@@ -1,0 +1,66 @@
+.addNoteContainer{
+    /* background-color: rgb(43, 159, 226); */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noteForm{
+    border: 1px solid grey;
+    padding: 40px;
+    width: 60%;
+    border-radius: 5px;
+    background: #b92b27;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.calendar input[type="date"]{
+    width: 98%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    outline-color: rgb(92, 141, 205);
+    background-color: transparent;
+    color: white;
+}
+
+.title input[type="text"]{
+    width: 98%;
+    padding: 15px 5px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 25px;
+    border-radius: 5px;
+    outline-color: rgb(92, 141, 205);
+    color: white;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Firefox */
+  }
+
+.body textarea{
+    width: 98%;
+    padding: 9px 5px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 25px;
+    height: 300px;
+    border-radius: 5px;
+    outline-color: rgb(92, 141, 205);
+    color: white;
+}
+
+textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Firefox */
+  }
+
+.btn button{
+    margin-top: 20px;
+    padding: 5px 20px;
+}

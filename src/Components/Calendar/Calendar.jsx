@@ -1,7 +1,7 @@
-const Calendar = () => {
+const Calendar = ({data,handleChange}) => {
     return(
         <div>
-           <input type="date"/>
+           <input type="date" name="date" value={data.date} onChange={handleChange}/>
         </div>
     )
 }
