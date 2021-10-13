@@ -7,14 +7,10 @@
 }
 
 .noteForm{
-    border: 1px solid grey;
+    /* border: 1px solid rgb(255, 255, 255); */
     padding: 40px;
-    width: 60%;
+    width: 70%;
     border-radius: 5px;
-    background: #b92b27;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 .calendar input[type="date"]{
