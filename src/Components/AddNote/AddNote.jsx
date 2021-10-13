@@ -1,10 +1,14 @@
 import { useState } from "react";
 import Calendar from "../Calendar/Calendar";
 import style from "./AddNote.module.css";
+import { useContext } from "react";
+import { StoreContext } from "../../Context/StoreContextProvider";
 
 const AddNote = () => {
 
     const [noteData, setNoteData] = useState({ title: "", body: "" ,date:""});
+
+    const { cards,setCards } = useContext(StoreContext);
 
     const handleChange = (e) => {
         let [name, value] = [e.target.name, e.target.value]
@@ -15,7 +19,17 @@ const AddNote = () => {
     }
 
     const handleSubmit = () => {
-        console.log(noteData)
+        let localData = JSON.parse(localStorage.getItem('cards'))
+        if(localData == null){
+            localStorage.setItem('cards',JSON.stringify([noteData]));
+            setCards([noteData])
+        }else{
+            let arr = localData
+            arr.push(noteData);
+            localStorage.setItem('cards',JSON.stringify(arr))
+            setCards(localData)
+           // console.log(arr)
+        }
     }
 
     return (
